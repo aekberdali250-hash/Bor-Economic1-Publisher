@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: bor-economic-publisher
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: CRON_SECRET
+        sync: false
+      - key: FACEBOOK_PAGE_ID
+        sync: false
+      - key: FACEBOOK_PAGE_ACCESS_TOKEN
+        sync: false
+      - key: META_GRAPH_VERSION
+        value: v24.0
+      - key: PUBLISH_START_DATE
+        sync: false

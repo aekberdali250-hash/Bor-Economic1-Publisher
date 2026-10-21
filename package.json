@@ -1,0 +1,16 @@
+{
+  "name": "bor-economic-publisher",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Independent scheduled Facebook publisher for four test economic articles",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
